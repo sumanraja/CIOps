@@ -61,7 +61,7 @@ spec:
         node(POD_LABEL) {
 
             def scmVars = checkout scm
-            String REPO_NAME = env.REPO_NAME ? env.REPO_NAME : "docker.io/egovio";           
+            String REPO_NAME = env.REPO_NAME ? env.REPO_NAME : "docker.io/csclhub";           
             def yaml = readYaml file: pipelineParams.configFile;
             List<JobConfig> jobConfigs = ConfigParser.parseConfig(yaml, env);
 
